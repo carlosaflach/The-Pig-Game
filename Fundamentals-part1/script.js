@@ -61,7 +61,7 @@
     lastName = "Flach"
 
     console.log(lastName);
-*/
+
 
 // Math Operators
 const now = 2037;
@@ -92,3 +92,19 @@ console.log(ageCarlos > ageSarah); // >, <, <=, >=
 console.log(ageSarah >= 18);
 
 console.log(now - 1991 > now - 2018);
+
+*/
+
+const now = 2037;
+const ageCarlos = now - 1993;
+const ageSarah = now - 2020;
+
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 -10 - 5; // x = y = 10,  y = 10, x = 10;
+
+console.log(x, y)
+
+const averageAge = (ageCarlos + ageSarah) / 2;
+console.log(ageCarlos, ageSarah, averageAge);
