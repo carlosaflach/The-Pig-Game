@@ -62,3 +62,33 @@
 
     console.log(lastName);
 */
+
+// Math Operators
+const now = 2037;
+const ageCarlos = now - 1993;
+const ageSarah = now - 2020;
+
+console.log(ageCarlos, ageSarah);
+
+console.log(ageCarlos * 2, ageCarlos / 10, 2 ** 3);
+
+const firstName = "Carlos";
+const lastName = "Flach";
+
+console.log(firstName + " " + lastName)
+
+let x = 10 +5;
+
+// Assingment Operators
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++ // x = x + 1
+x-- // x = x - 1
+console.log(x);
+
+// Comparison Operators
+
+console.log(ageCarlos > ageSarah); // >, <, <=, >=
+console.log(ageSarah >= 18);
+
+console.log(now - 1991 > now - 2018);
