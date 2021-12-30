@@ -387,7 +387,7 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
   console.log("No one wins the trophy!")
 }
 
-*/
+
 
 const day = 'monday';
 
@@ -428,3 +428,17 @@ if (day === 'monday') {
 } else {
   console.log("Not a valid day")
 }
+
+*/
+
+// expressions 
+// expressions produces values
+3 + 4
+1991
+true && false && !false
+
+// statements is  a full sentence with logic or action to the program perform.
+if(23 > 10) {
+  const str = '23 is bigger';
+}
+
