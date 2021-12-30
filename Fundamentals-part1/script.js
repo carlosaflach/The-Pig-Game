@@ -246,7 +246,7 @@ let n = '1' + 1;
 n = n - 1
 console.log(n);
 
-*/
+
 // 5 falsy values: 0, '', undefined, null, NaN
 
 console.log(Boolean(0));
@@ -271,3 +271,23 @@ if(height) {
 } else {
   console.log("Oh no! Height is undefined")
 }
+
+*/
+
+const age = 18; // Assingment just one equal
+if (age === 18) console.log("You just became an adult(strict equal)") // Comparison operator === strict operator,  == loose equal operator.
+
+if (age == 18) console.log("You just became an adult(loose equal)")
+
+// always use the strict equal, and do de conversion before it. It's a good practice of coding.
+
+const favorite = Number(prompt("What's is your favorite number?"));
+
+console.log(favorite)
+// console.log(typeof favorite);
+
+if (favorite === 23) console.log("Cool! 23 is an amazing number!");
+else if (favorite === 7) console.log('7 is also a cool number');
+else console.log('Number is not 23 or 7');
+
+if(favorite !== 23) console.log('Why not 23?')
