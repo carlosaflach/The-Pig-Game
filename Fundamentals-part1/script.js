@@ -311,14 +311,11 @@ const isTired = true; // C
 
 console.log(hasDriversLicense && hasGoodVision && isTired);
 
-
 if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log("Sarah is able to drive!")
 } else {
   console.log("Someone else should drive...")
 }
-
-
 
 // Coding Challenge #3
 
@@ -341,7 +338,6 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 // GOOD LUCK 😀
-
 
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKoalas = (88 + 91 + 110 ) / 3;
@@ -387,8 +383,6 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
   console.log("No one wins the trophy!")
 }
 
-
-
 const day = 'monday';
 
 switch(day) {
@@ -429,8 +423,6 @@ if (day === 'monday') {
   console.log("Not a valid day")
 }
 
-*/
-
 // expressions 
 // expressions produces values
 3 + 4
@@ -442,3 +434,21 @@ if(23 > 10) {
   const str = '23 is bigger';
 }
 
+*/
+
+const age = 15;
+
+// age >= 18 ? console.log('I like to drink wine🍷!') : console.log('I like to drink water 🌊!');
+
+const drink = age >= 18 ? 'wine🍷!' : 'water 🌊!';
+
+console.log(drink)
+
+let drink2;
+if(age >= 18) {
+  drink2 = 'wine🍷!'
+} else {
+  drink2 = 'water 🌊!'
+}
+
+console.log(` I like to drink ${age >= 18 ? 'wine🍷!' : 'water 🌊!'}`);
