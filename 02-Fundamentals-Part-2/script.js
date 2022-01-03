@@ -37,7 +37,6 @@ console.log(fruitProcessor(2,0));
 const appleAndOrangeJuice = fruitProcessor(2, 3);
 console.log(appleAndOrangeJuice);
 
-*/
 
 // fuction declaration
 const age1 = calcAge1(1993);
@@ -58,3 +57,27 @@ const age2 = calcAge2(1993);
 console.log(age1,age2)
 
 // the difference between fuction declaration and fuction expression, is that when it's function declaration we can invoke the function before it was declarated.
+
+*/
+
+// function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+}
+
+// Arrow fuction
+
+const calcAge3 = birthYear => 2037 - birthYear; // implicite return
+
+const age3 = calcAge3(1993);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement}`
+}
+
+console.log(yearsUntilRetirement(1993, 'Carlos'));
+console.log(yearsUntilRetirement(1991, 'Jonas'));
