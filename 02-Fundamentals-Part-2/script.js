@@ -58,7 +58,7 @@ console.log(age1,age2)
 
 // the difference between fuction declaration and fuction expression, is that when it's function declaration we can invoke the function before it was declarated.
 
-*/
+
 
 // function expression
 const calcAge2 = function (birthYear) {
@@ -81,3 +81,22 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1993, 'Carlos'));
 console.log(yearsUntilRetirement(1991, 'Jonas'));
+
+*/
+
+// Functions calling other functions
+
+function cutFruitPieces(fruit) {
+  const pieces = fruit * 4;
+  return  pieces;
+}
+
+function fruitProcessor( apples, oranges) {
+ const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2,3));
