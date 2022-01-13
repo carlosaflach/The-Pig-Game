@@ -119,7 +119,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1993, 'Carlos'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
 
-*/
+
 
 // Coding Challenge #1
 // Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new
@@ -179,3 +179,50 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 
 checkWinner(scoreDolphins, scoreKoalas);
+
+*/
+
+// Data Structure - Array
+
+// the way that we save data until now
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020); // function for create arrays.
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]) // to get the last element of an array.
+// expression return a value, while statement don't return it from itself.
+
+friends[2] = 'Jay';
+console.log(friends);
+
+const firstName = 'Carlos'
+const carlos =[firstName, 'Afonso', 'Flach', 2022-1993, 'dev', friends];
+console.log(carlos);
+console.log(carlos.length);
+
+// Exercise
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [age1, age2, age3];
+console.log(ages);
