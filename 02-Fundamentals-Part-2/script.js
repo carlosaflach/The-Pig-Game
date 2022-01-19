@@ -298,7 +298,7 @@ console.log(bills, tips);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
 console.log(totals);
-*/
+
 const carlosArray = [
   'Carlos',
   'Flach',
@@ -314,3 +314,39 @@ const carlos = {
   job: 'dev',
   friends: ['Gustavo', 'Artur', 'Kyle']
 }
+*/
+const carlos = {
+  firstName: 'Carlos',
+  lastName: 'Flach',
+  age: 2037-1993,
+  job: 'dev',
+  friends: ['Gustavo', 'Artur', 'Kyle']
+};
+
+// acessing keys of an object.
+console.log(carlos);
+// dot notation
+console.log(carlos.lastName);
+// brackets notation
+console.log(carlos['lastName']);
+
+const nameKey = 'Name';
+console.log(carlos['first' + nameKey]);
+console.log(carlos['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about carlos? Choose between firstName, lastName, age, job and friends');
+
+if(carlos[interestedIn]) {
+  console.log(carlos[interestedIn]);
+} else {
+  console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+}
+
+// adding keys to an object
+carlos.location = 'Brasil';
+carlos['twitter'] = '@carlosaflach';
+console.log(carlos);
+
+// Challenge
+// "Carlos has 3 friends, and his best friend is called Gustavo"
+console.log(`${carlos['firstName']} has ${carlos['friends'].length} friends, and his best friend is called ${carlos['friends'][0]}.`)
