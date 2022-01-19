@@ -282,7 +282,6 @@ if(friends.includes('Peter')) {
 // values (so don't store the tip values in separate variables first, but right in the new
 // array) 😉
 // GOOD LUCK 😀
-*/
 
 const calcTip = (billValue) => {
   if(billValue >= 50 && billValue <= 300) {
@@ -299,3 +298,19 @@ console.log(bills, tips);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
 console.log(totals);
+*/
+const carlosArray = [
+  'Carlos',
+  'Flach',
+  2037 - 1993,
+  'dev',
+  ['Gustavo', 'Artur', 'Kyle']
+];
+// object literaling sentence
+const carlos = {
+  firstname: 'Carlos',
+  lastName: 'Flach',
+  age: 2037-1993,
+  job: 'dev',
+  friends: ['Gustavo', 'Artur', 'Kyle']
+}
