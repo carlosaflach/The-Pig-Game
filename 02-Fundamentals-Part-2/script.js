@@ -436,7 +436,6 @@ if(john.calcBMI() > mark.calcBMI()) {
 for(let rep = 1; rep <= 10; rep += 1) {
   console.log(`Lifting weights repetition ${rep}`);
 }
-*/
 
 const carlosArray = ['Carlos', 'Flach', 2037-1993, 'dev', ['Gustavo', 'Kyle', 'Emeli']];
 const types = [];
@@ -470,4 +469,19 @@ console.log('---- BREAK WITH NUMBER ---')
 for(let i = 0; i < carlosArray.length; i += 1) {
   if(typeof carlosArray[i] === 'number') break;
   console.log(carlosArray[i], typeof carlosArray[i]);
+}
+*/
+// Looping Backwards.
+const carlosArray = ['Carlos', 'Flach', 2037-1993, 'dev', ['Gustavo', 'Kyle', 'Emeli']];
+
+for(let i = carlosArray.length -1; i >= 0; i -= 1) {
+  console.log(i, carlosArray[i]);
+}
+
+for(let exercise = 1; exercise <= 3; exercise += 1) {
+  console.log(`----STARTING EXERCISE ${exercise}`);
+
+  for(let rep = 1; rep < 6; rep += 1) {
+    console.log(`Lifting weight repetition  ${rep}`);
+  }
 }
