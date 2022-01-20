@@ -384,7 +384,7 @@ console.log(carlos['age']);
 // Challenge
 // "Carlos is a 44 year old teacher, and he has a drivers license";
 console.log(carlos.getSummary());
-*/
+
 // Coding Challenge #3
 // Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
 // implement the calculations! Remember: BMI = mass / height ** 2 = mass
@@ -429,4 +429,11 @@ if(john.calcBMI() > mark.calcBMI()) {
   console.log(`${john.fullName} BMI ${john.calcBMI()} is higher than ${mark.fullName} BMI ${mark.calcBMI()}`);
 } else {
   console.log(`${mark.fullName} BMI ${mark.calcBMI()} is higher than ${john.fullName} BMI ${john.calcBMI()}`);
+}
+*/
+
+// Interation: The loop for
+// For loop keeps running while the condition is TRUE.
+for(let rep = 1; rep <= 10; rep += 1) {
+  console.log(`Lifting weights repetition ${rep}`);
 }
