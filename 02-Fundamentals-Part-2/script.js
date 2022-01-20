@@ -314,7 +314,7 @@ const carlos = {
   job: 'dev',
   friends: ['Gustavo', 'Artur', 'Kyle']
 }
-*/
+
 const carlos = {
   firstName: 'Carlos',
   lastName: 'Flach',
@@ -349,4 +349,38 @@ console.log(carlos);
 
 // Challenge
 // "Carlos has 3 friends, and his best friend is called Gustavo"
-console.log(`${carlos['firstName']} has ${carlos['friends'].length} friends, and his best friend is called ${carlos['friends'][0]}.`)
+console.log(`${carlos['firstName']} has ${carlos['friends'].length} friends, and his best friend is called ${carlos['friends'][0]}.`);
+*/
+const carlos = {
+  firstName: 'Carlos',
+  lastName: 'Flach',
+  birthYear: 1993,
+  job: 'dev',
+  friends: ['Gustavo', 'Artur', 'Kyle'],
+  hasDriversLicense: true,
+  // here is an expression, produces a value. Not an declaration
+  // calcAge: function(birthYear) {
+  //   return 2037 - birthYear
+  // },
+  // calcAge: function() {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+  calcAge: function() {
+    // console.log(this);
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function() {
+    return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} a drivers license.`
+  }
+};
+
+console.log(carlos.calcAge());
+console.log(carlos['calcAge']());
+console.log(carlos.age);
+console.log(carlos['age']);
+
+// Challenge
+// "Carlos is a 44 year old teacher, and he has a drivers license";
+console.log(carlos.getSummary());
