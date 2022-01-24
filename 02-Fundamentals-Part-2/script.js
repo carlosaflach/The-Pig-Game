@@ -470,7 +470,7 @@ for(let i = 0; i < carlosArray.length; i += 1) {
   if(typeof carlosArray[i] === 'number') break;
   console.log(carlosArray[i], typeof carlosArray[i]);
 }
-*/
+
 // Looping Backwards.
 const carlosArray = ['Carlos', 'Flach', 2037-1993, 'dev', ['Gustavo', 'Kyle', 'Emeli']];
 
@@ -483,5 +483,24 @@ for(let exercise = 1; exercise <= 3; exercise += 1) {
 
   for(let rep = 1; rep < 6; rep += 1) {
     console.log(`Lifting weight repetition  ${rep}`);
+  }
+}
+console.log();
+*/
+// the while loop
+let rep = 1
+while(rep <= 10) {
+  console.log(`Lifting weight repetition  ${rep}`);
+  rep += 1
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !==6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if(dice === 6) {
+    console.log('Loop is about to end...')
   }
 }
