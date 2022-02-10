@@ -63,3 +63,20 @@ const calcTempAmplitudeNew = (array1, array2) => {
 
 const newAmplitude = calcTempAmplitudeNew([2,1],[3,4])
 console.log(newAmplitude)
+
+const measureKelvin = () => {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+    // C) FIXING THE BUG
+    value: Number(prompt('Degrees celcius: '))
+  }
+
+  // B) FIND THE BUG
+  console.table(measurement)
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+}
+// A) IDENTIFY
+console.log(measureKelvin())
