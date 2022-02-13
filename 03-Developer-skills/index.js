@@ -3,7 +3,7 @@
 // PROBLEM
 
 // We work for a company building a smart home thermometer. Our most recent taks is this: "Given an array of temperatures, of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor"
-
+/*
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 // 1) Understanding the problem.
@@ -80,3 +80,45 @@ const measureKelvin = () => {
 }
 // A) IDENTIFY
 console.log(measureKelvin())
+
+*/
+
+// Coding Challenge #1
+// Given an array of forecasted maximum temperatures, the thermometer displays a
+// string with the given temperatures. Example: [17, 21, 23] will print "... 17ºC in 1
+// days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+// Your tasks:
+// 1. Create a function 'printForecast' which takes in an array 'arr' and logs a
+// string like the above to the console. Try it with both test datasets.
+// 2. Use the problem-solving framework: Understand the problem and break it up
+// into sub-problems!
+// Test data:
+// § Data 1: [17, 21, 23]
+// § Data 2: [12, 5, -5, 0, 4]
+// GOOD LUCK 😀
+
+
+// 1 - Understanding the problem.
+// - Array transform to string, separated by ...
+// - What is the x day? Answer: index + 1;
+
+// 2) Breaking up in to sub-problems:
+// - Transform Array into a string;
+// - Transform each element to string with grays celcius.
+// - Strings needs to contain day (index + 1);
+// - Add ... between elements and start and end of string.
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+const printForecast = (array) => {
+  let str = '';
+  for(let i = 0; i < array.length; i++) {
+    str += `... ${array[i]}ºC in ${i + 1 } days `
+  }
+  return console.log(str); 
+}
+
+printForecast(data1);
+
+printForecast(data2);
