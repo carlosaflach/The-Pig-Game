@@ -52,7 +52,7 @@ const createRandomNumber = () => {
 };
 
 const checkIfPlayerWins = () => {
-  if(currentScore >= 20) {
+  if(currentScore >= 30) {
     document.getElementById(`score--${activePlayer}`).innerText = currentScore;
     diceEl.classList.add('hidden');
     playing = false;
@@ -94,7 +94,7 @@ bntHold.addEventListener('click', () => {
       document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
   
     //2. Check if the score >= 100;
-    if(scores[activePlayer] >= 20) {
+    if(scores[activePlayer] >= 30) {
       diceEl.classList.add('hidden');
         playing = false;
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
