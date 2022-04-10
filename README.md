@@ -21,3 +21,6 @@ In this project I could apply the following skills:<br>
 * CSS
 * JavaScript
 * Git
+
+### Get To Know The Game
+- Live Site URL: [The GPT-3 Project](https://the-pig-game-one.vercel.app/)
