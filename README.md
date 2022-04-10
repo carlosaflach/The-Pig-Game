@@ -23,4 +23,4 @@ In this project I could apply the following skills:<br>
 * Git
 
 ### Get To Know The Game
-- Live Site URL: [The GPT-3 Project](https://the-pig-game-one.vercel.app/)
+- Live Site URL: [The Pig Game](https://the-pig-game-one.vercel.app/)
