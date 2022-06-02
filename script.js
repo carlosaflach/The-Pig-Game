@@ -52,7 +52,7 @@ const createRandomNumber = () => {
 };
 
 const checkIfPlayerWins = () => {
-  if(currentScore >= 30) {
+  if(currentScore >= 100) {
     document.getElementById(`score--${activePlayer}`).innerText = currentScore;
     diceEl.classList.add('hidden');
     playing = false;
