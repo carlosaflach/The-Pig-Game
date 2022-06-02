@@ -2,9 +2,8 @@
 
 ### Introduction
 
-This is a project created when I was taking a javascript course. This project was a challenge, based on the pig game.<br><br>
-Originally the game of Pig is a very simple jeopardy dice game in which two players race to reach 100 points. 
-However, in my implementation I kept as 30 the value that the player must reach to win the game.<br>  
+This is a project created when I was taking a JavaScript course. This project was a challenge, based on the pig game.<br><br>
+The game of Pig is a very simple jeopardy dice game in which two players race to reach 100 points. <br/>
 Each turn, a player repeatedly rolls a dice until either a 1 is rolled or the player holds and scores the sum of the rolls (i.e. the turn total). At any time during a player's turn, the player is faced with two decisions:
 
 <strong>roll</strong> - If the player rolls a 
