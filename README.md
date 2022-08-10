@@ -22,7 +22,7 @@ In this project I could apply the following skills:<br>
 * Git
 
 ### Get To Know The Game
-- Live Site URL: [The Pig Game](https://the-pig-game-one.vercel.app/)
+- App: [The Pig Game](https://the-pig-game-one.vercel.app/)
 
 ## Created By:
 - Linkedin - [Carlos A.](https://www.linkedin.com/in/carlosafonsoflach/)
