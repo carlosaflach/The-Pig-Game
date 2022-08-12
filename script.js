@@ -94,7 +94,7 @@ bntHold.addEventListener('click', () => {
       document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
   
     //2. Check if the score >= 100;
-    if(scores[activePlayer] >= 30) {
+    if(scores[activePlayer] >= 100) {
       diceEl.classList.add('hidden');
         playing = false;
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
