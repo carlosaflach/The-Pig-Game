@@ -101,6 +101,8 @@ bntHold.addEventListener('click', () => {
         document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
     }
     //3. Switch Player;
+    // cl aleatorio
+    console.log("ALEATORIO");
     switchPlayer();
   }
 });
